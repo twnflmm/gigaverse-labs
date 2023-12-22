@@ -1,0 +1,9 @@
+.about {
+	padding: 80px 0 160px 0;
+
+	&__paragraph {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}

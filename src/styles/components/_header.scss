@@ -1,0 +1,32 @@
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 60px;
+	width: 100%;
+	z-index: 100;
+	transition: all .3s;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__nav {
+		@media (max-width: 1040px) {
+			display: none;
+		}
+	}
+}
+
+.header-fixed {
+	position: fixed;
+	padding: 10px 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: $woodsmoke;
+	transition: all .3s ease-in-out;
+}

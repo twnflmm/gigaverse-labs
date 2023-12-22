@@ -1,0 +1,108 @@
+* {
+  font-family: 'Roboto Mono', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: $white;
+  background-color: $baltic;
+}
+
+input {
+  background-color: inherit;
+  font: inherit;
+  border-width: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section {
+  position: relative;
+}
+
+picture {
+  height: 100%;
+
+  img {
+    display: flex;
+    align-items: end;
+  }
+}
+
+button {
+  border: none;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-family: 'Joystix Monospace', sans-serif;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  color: $green;
+
+  &--white {
+    color: $white;
+  }
+
+  @media (max-width: 1040px) {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
